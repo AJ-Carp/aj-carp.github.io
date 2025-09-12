@@ -3225,6 +3225,9 @@ input, select, textarea {
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 
 		#wrapper > .bg {
@@ -3291,7 +3294,7 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		display: -moz-flex;
-		display: -webkit-flex;
+		display: -webkit-flex; 
 		display: -ms-flex;
 		display: flex;
 		-moz-flex-direction: column;
@@ -3762,6 +3765,15 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+	}
+
+	/* i added */
+	@media (min-width: 736px) {
+		body #wrapper #intro {
+			margin: 0 auto;
+			width: calc(100% - 4rem);
+			max-width: 80rem;
+		}
 	}
 
 		#main > * {
@@ -4687,3 +4699,33 @@ input, select, textarea {
 		}
 
 	}
+
+  /* i added */
+	body #wrapper #intro {
+		margin: 0;
+		text-align: center;
+	}
+
+	#profile-pic {
+		width: 370px;
+		border-radius: 250px;
+		margin-right: 5%
+	}
+
+	@media (min-width: 1148px) {
+		#intro div {
+			display: flex;
+		}
+
+		#profile-pic {
+			width: 30%;
+		}
+	}
+
+	@media (max-width: 720px) {
+
+		#profile-pic {
+			width: 60%;
+		}
+	}
+
