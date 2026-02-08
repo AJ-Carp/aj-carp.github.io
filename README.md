@@ -1,2 +1,2 @@
 # Portfolio Website
-view [here](https://aj-carp.github.io/AJCarp.github.io/)!
+view [here](https://aj-carp.github.io/)!
